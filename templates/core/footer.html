@@ -1,0 +1,106 @@
+{% block footer %}
+    {% load static %}
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        * {
+            font-family: 'poppins', sans-serif;
+        }
+
+        .footer-con{
+            position: relative;
+            border-top-left-radius: 160px;
+            background: #26619c;
+            box-shadow:  5px 5px 9px #7100e3,
+                         -5px -5px 9px #8d00ff;
+            height: 160px;
+            margin-top: 10px;
+        }
+
+        .copyright-con{
+            border-top-left-radius: 25px;
+            position: relative;
+            background-color: #225487;
+            height: 40px;
+        }
+
+        .text-link{
+            font-weight: 50px;
+            font-size: 15px;
+            color: deepskyblue;
+            letter-spacing: 1px;
+        }
+
+        .text-link:hover{
+            color: #fff;
+        }
+
+        .horizontal-links {
+            list-style: none;
+        }
+
+        .horizontal-links li {
+            display: inline;
+        }
+
+        .separator {
+            margin: 0 5px;
+            color: lightblue;"
+        }
+
+        .menu{
+            font-weight: 80px;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+            margin-bottom: 20px;
+            letter-spacing: 5px;
+        }
+
+        .p{
+            font-weight: 25px;
+            font-size: 11px;
+            color: white;
+            text-align: center;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .copyright{
+            font-weight: 20px;
+            font-size: 10px;
+            color: lightgray;
+            text-align: center;
+            margin-top: 8px;
+            padding-top: 16px;
+        }
+
+    </style>
+
+<footer class="footer-con">
+
+<div class="menu">
+    MENU
+</div>
+
+<div class="p">
+Experience the future of healthcare with our hospital's eVisit HealthCare platform, providing seamless virtual consultations for exceptional patient care.
+</div>
+
+        <ul class="horizontal-links" style="text-align: center; margin-right: 5px;">
+    <li><a href="/about" class="text-link">About</a></li>
+    <li><span class="separator">||</span></li>
+    <li><a href="/contact" class="text-link">Contact</a></li>
+    <li><span class="separator">||</span></li>
+    <li><a href="/privacypolicy" class="text-link">Privacy Policy</a></li>
+</ul>
+<div class="copyright-con">
+        <div class="copyright">
+            Copyright © 2020 | All Rights Reserved
+        </div>
+</div>
+
+
+{% endblock %}
